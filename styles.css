@@ -2,7 +2,7 @@
     font-family: norse-bold;
     src: url(Norse-Bold.otf);
 }
-
+/* CSS RESET */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -125,6 +125,18 @@ input {
   border: 1px solid #E5E7EB;
   border-radius: 5px;
   width: 50%;
+  font-weight: 400;
+}
+
+input:focus {
+  border: 1px solid #4f71c2;
+  box-shadow: 0px 3px 5px lightgray;
+  outline: none;
+}
+
+input:invalid {
+  border: 1px solid #a95d5c;
+  outline: none;
 }
 
 .logo {
@@ -148,4 +160,47 @@ input {
   font-family: norse-bold;
   font-size: 96px;
   opacity: 1;
+}
+
+.footer {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content a {
+  color: #596d48;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  font-size: 24px;
+  padding: 10px 60px;
+  margin: 40px 80px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 5px lightgray;
+}
+
+.footer {
+  margin: 20px 80px;
+  padding: 0;
+}
+
+.attribution {
+  position: absolute;
+  color: white;
+  font-family: helvetica;
+  bottom: 0px;
+  width: calc(100%/3);
+  text-align: center;
+  padding: 10px;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: underline;
 }
